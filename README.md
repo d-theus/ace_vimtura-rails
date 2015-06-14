@@ -21,8 +21,23 @@ Or install it yourself as:
     $ gem install ace_vimtura-rails
 
 ## Usage
+Create `div` element, specify it's height and width with
+html attribute or css and give it an id: for instance `editor`.
+`application.js` or any other controller-specific js file:
 
-TODO: Write usage instructions here
+```javascript
+// requirejs
+//=require 'ace_vimtura/lib/require'
+//=require 'ace_vimtura/main'
+// ...
+require(['ace_vimtura'], function(av){
+      AceVimtura.init('editor')
+    });
+```
+
+
+`requirejs` is strong requirement for version `0.1.0`, so it
+is shipped within `lib/`. Some day I'll make multiple builds.
 
 ## Development
 
