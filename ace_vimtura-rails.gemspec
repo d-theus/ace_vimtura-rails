@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["slma0x02@gmail.com"]
 
   spec.summary       = %q{Rails wrapper for http://github.com/d-theus/ace_vimtura}
-  spec.description   = %q{}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.description   = %q{Gem version == node package version}
+  spec.homepage      = "http://github.com/d-theus/ace_vimtura-rails"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
