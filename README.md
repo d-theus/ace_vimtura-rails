@@ -21,6 +21,12 @@ Or install it yourself as:
     $ gem install ace_vimtura-rails
 
 ## Usage
+Run `rails generate ace_vimtura:install` first.
+
+Currently AceVimtura relies on requirejs due to enormous
+sources. Therefore it's better not to be compiled into your
+application js file and to reside in `public/assets`.
+
 Create `div` element, specify it's height and width with
 html attribute or css and give it an id: for instance `editor`.
 `application.js` or any other controller-specific js file:
@@ -31,7 +37,7 @@ html attribute or css and give it an id: for instance `editor`.
 //=require 'ace_vimtura/main'
 // ...
 require(['ace_vimtura'], function(av){
-      AceVimtura.init('editor')
+      AceVimtura.init('editor', { filetype: 'markdown', theme: 'twilight'})
     });
 ```
 
