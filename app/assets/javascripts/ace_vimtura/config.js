@@ -1,7 +1,6 @@
 requirejs.config({
-  baseUrl: '/assets/ace_vimtura',
   paths: {
-    ace_vimtura: 'ace_vimtura',
+    ace_vimtura: 'ace_vimtura'
   },
   packages: [
     {
@@ -14,10 +13,4 @@ requirejs.config({
       location: 'lib/ace'
     }
   ]
-});
-
-require(['./ace_vimtura'], function(av) {
-  if (window) {
-    return window.AceVimtura = av;
-  }
 });

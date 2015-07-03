@@ -3,5 +3,6 @@ class AceVimtura::InstallGenerator < ::Rails::Generators::Base
 
   def copy_assets_to_public_dir
     directory 'javascripts/ace_vimtura', 'public/assets/ace_vimtura'
+    directory 'javascripts/lib', 'public/assets/lib'
   end
 end
